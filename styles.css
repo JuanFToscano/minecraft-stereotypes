@@ -1,0 +1,593 @@
+/* BODY */
+
+html, body{
+  height: 100%;
+  margin: 0;
+  background-color: rgb(37, 38, 40);
+  overflow: hidden;
+  font-family: "Minecraftia-Regular.ttf";
+}
+
+
+/* NORMAL TEXT FONT */
+
+@font-face {
+  font-family: "Minecraftia-Regular.ttf";
+  src: url("/fonts/Minecraftia-Regular.ttf")
+  /* (Minecraftia) downloaded from DaFont.com */
+}
+
+
+/* TITLES TEXT FONT (h1) */
+
+@font-face {
+  font-family: "Minecraftory.ttf";
+  src: url("/fonts/Minercraftory.ttf");
+  /* (Minecrafter) downloaded from DaFont.com */
+}
+
+
+/* INDEX */
+
+.tvRoomBackground{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.tvControlButtonOn{
+  position: absolute;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.089);
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 6%;
+  left: 27%;
+  width: 60px;
+  height: 60px;
+}
+
+.tvControlButtonOn:hover{
+  background-color: rgba(255, 0, 0, 0.322);
+}
+
+.tvControlContainerIndex{
+  position: fixed;
+  bottom: -270px;
+  left: 50%;
+  transform: translate(-50%);
+
+  width: 300px;
+  height: auto;
+  z-index: 10;
+  
+  transition: bottom 0.3s ease;
+}
+
+
+/* MAIN PAGE AND MAIN CONTAINERS */
+
+.mainContainer{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(42, 42, 42);
+  z-index: 1;
+}
+
+.tvFrame{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100vw;
+  height: auto;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.mainPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(#A1E887, #136F63);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+}
+
+.mainPageImages{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(22, 62, 107) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.mainPageImages:hover{
+  transform: scale(1.2);
+}
+
+
+/* CREDITS PAGE */
+
+.creditsPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(#9BA2FF, #2B193D);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+  color: white;
+}
+
+
+/* TV CONTROL */
+
+.tvControlContainer{
+  position: fixed;
+  bottom: -270px;
+  left: 50%;
+  transform: translate(-50%);
+
+  width: 300px;
+  height: auto;
+  z-index: 10;
+  
+  transition: bottom 0.3s ease;
+}
+
+.tvControlContainer:hover{
+  bottom: -110px;
+}
+
+.tvControl{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tvControlButtonOff{
+  position: absolute;
+  display: block;
+  background-color: rgba(255, 0, 0, 0.089);
+  border-radius: 30px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 6%;
+  left: 27%;
+  width: 60px;
+  height: 60px;
+}
+
+.tvControlButtonOff:hover{
+  background-color: rgba(255, 0, 0, 0.322);
+}
+
+.tvControlButtonTheNoob{
+  position: absolute;
+  display: block;
+  background-color: rgba(255, 60, 0, 0.120);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 35%;
+  left: 16%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonTheNoob:hover{
+  background-color: rgba(193, 25, 23, 0.3);
+}
+
+.tvControlButtonTheMiner{
+  position: absolute;
+  display: block;
+  background-color: rgba(4, 6, 54, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 36%;
+  left: 42%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonTheMiner:hover{
+  background-color: rgba(13, 11, 92, 0.3);
+}
+
+.tvControlButtonTheFarmer{
+  position: absolute;
+  display: block;
+  background-color: rgba(2, 4, 40, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 37%;
+  left: 69%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonTheFarmer:hover{
+  background-color: rgba(10, 5, 68, 0.3);
+}
+
+.tvControlButtonTheRedstonist{
+  position: absolute;
+  display: block;
+  background-color: rgba(12, 46, 5, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 54%;
+  left: 16%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonTheRedstonist:hover{
+  background-color: rgba(15, 74, 12, 0.3);
+}
+
+.tvControlButtonTheBuilder{
+  position: absolute;
+  display: block;
+  background-color: rgba(45, 4, 11, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 54%;
+  left: 43%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonTheBuilder:hover{
+  background-color: rgba(113, 22, 33, 0.3);
+}
+
+.tvControlButtonThePro{
+  position: absolute;
+  display: block;
+  background-color: rgba(4, 49, 23, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 55%;
+  left: 69%;
+  width: 60px;
+  height: 55px;
+}
+
+.tvControlButtonThePro:hover{
+  background-color: rgba(15, 90, 51, 0.3);
+}
+
+.tvControlButtonCredits{
+  position: absolute;
+  display: block;
+  background-color: rgba(49, 38, 4, 0.116);
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 11;
+
+  top: 11%;
+  left: 64%;
+  width: 55px;
+  height: 45px;
+}
+
+.tvControlButtonCredits:hover{
+  background-color: rgba(153, 130, 26, 0.3);
+}
+
+
+/* THE NOOB PAGE */
+
+.theNoobPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #46ACC2, #065A82);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+}
+
+#noobImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.noobCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(16, 29, 80) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.noobCreations:hover{
+  transform: scale(1.2);
+}
+
+
+
+/* THE MINER PAGE */
+
+.theMinerPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #fff563, #ff8f05);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+}
+
+#minerImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.minerCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(47, 43, 4) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.minerCreations:hover{
+  transform: scale(1.2);
+}
+
+
+/* THE FARMER PAGE */
+
+.theFarmerPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #91CB3E, #53A548, #4C934C);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+}
+
+#farmerImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.farmerCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(4, 41, 6) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.farmerCreations:hover{
+  transform: scale(1.2);
+}
+
+
+/* THE REDSTONIST PAGE */
+
+.theRedstonistPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #FC2F00, #6C0E23);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+  color: white;
+}
+
+#redstonistImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.redstonistCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(51, 5, 5) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.redstonistCreations:hover{
+  transform: scale(1.2);
+}
+
+
+/* THE BUILDER PAGE */
+
+.theBuilderPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #DBD053, #FF3C38);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+  color: white;
+}
+
+#builderImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.builderCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(51, 5, 5) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.builderCreations:hover{
+  transform: scale(1.2);
+}
+
+
+/* THE PRO PAGE */
+
+.theProPage{
+  position: relative;
+  aspect-ratio: 16/9;
+  top: 56%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75vw;
+  height: 100vh;
+  margin: 24px auto;
+  background: linear-gradient(180deg, #5B2A86, #360568, #150811);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 300px;
+  z-index: 2;
+  color: white;
+}
+
+#proImage{
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: auto;
+  border: solid black 4px;
+  border-radius: 15px;
+}
+
+.proCreations{
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  height: auto;
+  border: solid rgb(21, 1, 22) 4px;
+  border-radius: 15px;
+  transition: transform 1s ease;
+}
+
+.proCreations:hover{
+  transform: scale(1.2);
+}
+
+
+/* TEXTS */
+
+h1{
+  text-align: center;
+  font-family: "Minecraftory.ttf";
+}
+
+h2{
+  text-align: center;
+}
+
+h3{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}
+
+ul{
+  text-align: center;
+}
+
+li{
+  list-style-type: square;
+}
