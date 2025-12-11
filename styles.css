@@ -13,7 +13,7 @@ html, body{
 
 @font-face {
   font-family: "Minecraftia-Regular.ttf";
-  src: url("/fonts/Minecraftia-Regular.ttf")
+  src: url("./fonts/Minecraftia-Regular.ttf")
   /* (Minecraftia) downloaded from DaFont.com */
 }
 
@@ -22,7 +22,7 @@ html, body{
 
 @font-face {
   font-family: "Minecraftory.ttf";
-  src: url("/fonts/Minercraftory.ttf");
+  src: url("./fonts/Minercraftory.ttf");
   /* (Minecrafter) downloaded from DaFont.com */
 }
 
